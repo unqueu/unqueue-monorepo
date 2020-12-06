@@ -22,5 +22,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "unqueue-app": {
+      "tags": []
+    },
+    "unqueue-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["unqueue-app"]
+    }
+  }
 }
