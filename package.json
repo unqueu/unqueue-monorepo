@@ -26,7 +26,10 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "^8.1.2",
+    "firebase-admin": "^9.4.1"
+  },
   "devDependencies": {
     "@nrwl/cli": "10.4.4",
     "@nrwl/nest": "^10.4.4",
