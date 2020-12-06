@@ -99,6 +99,37 @@
           }
         }
       }
+    },
+    "shared-common-models": {
+      "root": "libs/shared/common/models",
+      "sourceRoot": "libs/shared/common/models/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/shared/common/models",
+            "tsConfig": "libs/shared/common/models/tsconfig.lib.json",
+            "packageJson": "libs/shared/common/models/package.json",
+            "main": "libs/shared/common/models/src/index.ts",
+            "assets": ["libs/shared/common/models/*.md"]
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/shared/common/models/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/common/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

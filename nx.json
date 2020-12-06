@@ -29,6 +29,9 @@
     "unqueue-app-e2e": {
       "tags": [],
       "implicitDependencies": ["unqueue-app"]
+    },
+    "shared-common-models": {
+      "tags": []
     }
   }
 }
